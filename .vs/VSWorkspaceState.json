@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ExpressApp1",
+    "\\ExpressApp1\\public",
+    "\\ExpressApp1\\public\\stylesheets",
+    "\\ExpressApp1\\routes",
+    "\\ExpressApp1\\views"
+  ],
+  "SelectedNode": "\\ExpressApp1\\views\\register.ejs",
+  "PreviewInSolutionExplorer": false
+}
