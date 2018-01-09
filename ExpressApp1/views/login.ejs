@@ -1,0 +1,25 @@
+
+<%
+    include header.ejs
+
+%>
+
+<form action="" method="post">
+    <div>
+        <label for="user">Username :</label>
+        <input type="text" id="login_name" name="login_name" />
+    </div>
+   
+    <div>
+        <label for="mdp">Mot de Passe :</label>
+        <input id="login_mdp" name="login_mdp"></input>
+    </div>
+    
+    <div class="button">
+        <button type="submit">Connection</button>
+    </div>
+</form>
+
+<%
+    include footer.ejs
+%>
