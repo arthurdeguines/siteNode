@@ -10,6 +10,7 @@ var routes = require('./routes/index');
 var login = require('./routes/login');
 var users = require('./routes/users');
 var register = require('./routes/register');
+var poster = require('./routes/postregister');
 
 
 
@@ -31,6 +32,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
+app.use('/postregister', poster);
 
 
 
@@ -65,8 +67,12 @@ app.use(function (err, req, res, next) {
     });
 });
 
+
 app.set('port', process.env.PORT || 3000);
 
 var server = app.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);
 });
+
+
+
