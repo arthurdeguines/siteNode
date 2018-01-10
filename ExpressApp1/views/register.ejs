@@ -1,8 +1,13 @@
 
 <%
     include header.ejs
-
 %>
+
+ <p>--------------------BODY---------------------</p>
+
+
+<a href="/" id="connection">Connection</a>
+<div id="formConnection">
 
 <form action="/postregister" method="post">
     <div>
@@ -19,14 +24,18 @@
     </div>
     
     <div class="button">
-        <button type="submit">Enregistrer</button>
+        <button type="submit">Valider</button>
     </div>
   <%
     console.log("ca passe");
 %>
 
 </form>
+</div>
+<a href="/register" id="inscription">Inscription</a>
 
 <%
+	
     include footer.ejs
 %>
+

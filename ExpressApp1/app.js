@@ -1,4 +1,5 @@
 ﻿'use strict';
+var $ = require('jquery');
 var debug = require('debug');
 var express = require('express');
 var path = require('path');
@@ -11,6 +12,7 @@ var login = require('./routes/login');
 var users = require('./routes/users');
 var register = require('./routes/register');
 var poster = require('./routes/postregister');
+var accueil = require('./routes/accueil');
 
 
 
@@ -28,11 +30,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', accueil);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
 app.use('/postregister', poster);
+app.use('/index', routes);
+
+
+
 
 
 
